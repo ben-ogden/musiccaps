@@ -28,7 +28,7 @@ search_pinecone(query)
 ```
 
 
-```json
+```python
 {'matches': [{'id': '5327',
               'metadata': {'aspect_list': "['romanian folk music', 'live "
                                           "performance', 'instrumental', "
