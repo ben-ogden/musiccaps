@@ -63,24 +63,33 @@ search_pinecone(query)
 
 You'll get a sense for the results reading the `caption` field and noting the `score`. The `ytid` is the YouTube video id and `start_s` defines the starting point for the relevant video.
 
-## Running the Demo Application
 
-To run the UI, you'll need to
-1. Create and populate the Pinecone index using the notebook above ^
-2. [Install Streamlit](https://docs.streamlit.io/library/get-started/installation) and prerequisites. 
 
-If you're using macOS, you can simply follow these steps and continue below and then continue with the Streamlit install:
-- [Python Environment Setup for macOS](https://gist.github.com/ben-ogden/c139b8c73b81751ab3e0bbafc9282c8f)
- 
+----------
+
+
+# Running the Demo Application
+
+## tl;dr
+```console
+streamlit run search-app.py
+```
+
+![MusicCaps Semantic Search with Pinecone](img/musiccaps1.png)
+
 ## Install the pinecone-client and streamlit
 
-The pinecone-client allows you to, well, connect to Pinecone. Streamlit is an application framework that simplifies building UIs and applications.
+To run the search app, you'll need to
+1. Create and populate the Pinecone index using the notebook above ^
+2. Setup a Python environment. macOS users can use thhis -
+    [Python Environment Setup for macOS](https://gist.github.com/ben-ogden/c139b8c73b81751ab3e0bbafc9282c8f)
+3. [Install Streamlit](https://docs.streamlit.io/library/get-started/installation) and prerequisites. 
 
 ```console
 git clone https://github.com/ben-ogden/musiccaps.git
 cd musiccaps
 pipenv shell
-pip install --upgrade pinecone-client streamlit
+pipenv install pinecone-client streamlit
 streamlit version
 ...
 Streamlit, version 1.22.0
@@ -98,6 +107,8 @@ PINECONE_ENV = ".."
 ```console
 streamlit run search-app.py
 ```
+
+![MusicCaps Semantic Search with Pinecone](img/musiccaps2.png)
 
 ## Next Steps
 
