@@ -4,14 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-streamlit-player = "*"
-streamlit-gallery = "*"
 watchdog = "*"
 click = "==8"
 sentencepiece = "*"
 sentence-transformers = "*"
 pinecone-client = "*"
 datasets = "*"
+protobuf = "*"
 streamlit = "*"
 
 [dev-packages]
