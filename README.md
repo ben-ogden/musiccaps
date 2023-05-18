@@ -16,7 +16,9 @@ Step through the Notebook [init-pinecone-index.ipynb](https://github.com/ben-ogd
 3. Create the Pinecone Index
 4. Generate Embeddings and Populate the Index
 
-Note that you will need to replace `YOUR_API_KEY` and `YOUR_REGION` with the values shown from the API Keys tab in the Pinecone console. It could take some time to generate embeddings and populate the index (About 20-25 minutes if running from Colab) - Great time for a coffee break.
+Notes:
+- You will need to replace `YOUR_API_KEY` and `YOUR_REGION` with the values shown from the API Keys tab in the Pinecone console. 
+- If you take the default settings in Colab, it could take some time to generate embeddings and populate the index (About 20-25 minutes) - Great time for a coffee break. Or, set the runtime to use a GPU in ****Edit | Settings > Hardware Accelerator****. You can select T4 as GPU type in the free tier. This will generate the embeddings and populate the index in under a minute!
 
 ## Ready for Semantic Search!
 
