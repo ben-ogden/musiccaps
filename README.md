@@ -5,7 +5,7 @@ A demonstration of [semantic search](https://en.wikipedia.org/wiki/Semantic_sear
 ## Prerequisites
 
 - A Starter (free) [Pinecone Account](https://app.pinecone.io/?sessionType=signup)
-- A Pinecone API Key (Note the key value and the environment from the Pinecone console)
+- A Pinecone API Key 
 
 ## Creating the Pinecone Index
 
@@ -101,7 +101,6 @@ Create a secrets file in ~/.streamlit/secrets.toml and set your `PINECONE_KEY` a
 
 ```console
 PINECONE_KEY = "..."
-PINECONE_ENV = ".."
 ```
 
 ## Happy Semantic Searching!

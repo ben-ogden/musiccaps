@@ -1,23 +1,19 @@
-from PIL import Image
-import pinecone
 import streamlit as st
 import torch
+from PIL import Image
+from pinecone.grpc import PineconeGRPC as Pinecone
 from sentence_transformers import SentenceTransformer
 from ui import *
 
 PINECONE_KEY = st.secrets["PINECONE_KEY"]
-PINECONE_ENV = st.secrets["PINECONE_ENV"]
 PINECONE_INDEX = "music-caps-index"
 
 
 @st.cache_resource
 def get_pinecone_index():
     # connect to pinecone environment
-    pinecone.init(
-        api_key=PINECONE_KEY,
-        environment=PINECONE_ENV,
-    )
-    return pinecone.Index(PINECONE_INDEX)
+    pc = Pinecone(api_key=PINECONE_KEY)
+    return pc.Index(PINECONE_INDEX)
 
 
 @st.cache_resource

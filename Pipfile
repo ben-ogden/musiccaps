@@ -8,13 +8,13 @@ watchdog = "*"
 click = "==8"
 sentencepiece = "*"
 sentence-transformers = "*"
-pinecone-client = "*"
 datasets = "*"
 protobuf = "*"
 streamlit = "*"
+pinecone-client = {extras = ["grpc"], version = "*"}
+torch = "*"
 
 [dev-packages]
 black = "*"
-
-[requires]
-python_version = "3.11"
+#[requires]
+#python_version >= "3.11"
